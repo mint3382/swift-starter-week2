@@ -6,11 +6,11 @@
 //
 
 import Foundation
-var luckyNumbers: Set<Int> = Set<Int>()
+var newLuckyNumbers: Set<Int> = Set<Int>()
 
-func pickNumbers() {
-    while luckyNumbers.count < 6 {
-        luckyNumbers.insert(Int.random(in: (1...45)))
+func pickLuckyNumbers() {
+    while newLuckyNumbers.count < 6 {
+        newLuckyNumbers.insert(Int.random(in: (1...45)))
     }
 }
 
@@ -18,8 +18,8 @@ var passedLuckyNumbers: Dictionary<String, Set> = [String: Set<Int>]()
 
 func saveLuckyNumbers(time: Int) {
     for count in 1...time {
-        pickNumbers()
-        passedLuckyNumbers["\(count)회차"] = luckyNumbers
+        pickLuckyNumbers()
+        passedLuckyNumbers["\(count)회차"] = newLuckyNumbers
     }
 }
 

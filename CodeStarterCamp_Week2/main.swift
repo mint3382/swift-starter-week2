@@ -8,10 +8,6 @@
 
 import Foundation
 
-pickNumbers()
-
-//checkMyLotto()
-
 saveLuckyNumbers(time: 5)
 
-getPassedLuckyNumbers(time: 6)
+getPassedLuckyNumbers(time: 1)
